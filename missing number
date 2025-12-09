@@ -1,0 +1,9 @@
+int missingNumber(int* nums, int numsSize) {
+    int totalsize=numsSize*(numsSize+1)/2;
+    int arraysize=0;
+    for(int i =0;i<numsSize;i++){
+        arraysize+=nums[i];
+    }
+    return totalsize-arraysize;
+    
+}
